@@ -213,6 +213,8 @@ a {
     align-items: center;
     align-self: stretch;
     position: fixed;
+    display: flex;
+    flex-direction: row;
     border-radius: 10px;
     background: #E5FFF0;
     padding: 16px 16px 18px 16px;
