@@ -14,6 +14,12 @@ document.addEventListener("DOMContentLoaded", function () {
             loadNavbarScript();
         })
         .catch(error => console.error("Error loading navbar:", error))
+    fetch("../components/foods-card.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("foods-card").innerHTML = data;
+        })
+        .catch(error => console.error("Error loading foodcard:", error));
 
 });
 
@@ -44,11 +50,11 @@ function loadNavbarScript() {
     let menuToggle = document.getElementById("menu-toggle");
     let sidebar = document.getElementById("sidebar-container");
     let navbar = document.querySelector(".navbar");
-
+    let mainContent = document.querySelector(".main-content");
     if (menuToggle && sidebar) {
         menuToggle.addEventListener("click", function () {
             sidebar.classList.toggle("active");
-            navbar.classList.toggle("full-width");
+            navbar.classList.toggle("full-width"); mainContent.classList.toggle("full-width");
         });
     } else {
         console.error("Menu toggle button not found!");
