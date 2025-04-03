@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     loadComponent("../components/sidebar.html", "sidebar-container", highlightActiveNav);
     loadComponent("../components/navbar.html", "navbar-container", loadNavbarScript);
     loadComponent("../components/foods-card.html", "foods-card");
+    loadComponent("../components/recipe-dashboard.html", "recipe-dashboard");
     loadComponent("../components/recipe-card.html", "recipe-card");
 });
 
