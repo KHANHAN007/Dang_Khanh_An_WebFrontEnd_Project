@@ -9,7 +9,6 @@
     flex-direction: column;
     justify-content: space-between;
     /* Đảm bảo phần sign-out luôn ở cuối */
-    padding-bottom: 5vh;
 }
 
 .container-logo {

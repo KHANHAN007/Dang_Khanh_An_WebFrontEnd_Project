@@ -32,3 +32,20 @@ frontend/
 │   ├── recipe-card.html              # Giao diện một công thức món ăn
 │   ├── food-card.html                # Giao diện một món ăn
 │── README.md                         # Hướng dẫn dự án
+
+
+
+<!-- .value {
+  display: inline-block; /* Để kích thước khớp với nội dung */
+  max-width: 100%; /* Đảm bảo không vượt quá phần tử cha */
+  max-height: 31.5px; /* Giới hạn chiều cao */
+  overflow: hidden; /* Ẩn nội dung vượt quá giới hạn */
+  white-space: nowrap; /* Ngăn xuống dòng */
+  text-overflow: ellipsis; /* Thêm dấu "..." nếu nội dung bị cắt */
+  color: #282828;
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.5px;
+} -->
