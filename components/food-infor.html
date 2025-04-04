@@ -5,10 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Information</title>
+    <link rel="stylesheet" href="../css/food-infor.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
     <div class="foodInfor-container">
+        <div class="btn-close">×</div>
         <div class="header">
             <div class="header-title">Food Information</div>
             <div class="describe">Check and update the information about the food</div>
@@ -29,18 +37,231 @@
             <div class="preliminary-container">
                 <div class="name">Quantity</div>
                 <div class="quantity-container">
-                    <div class="value-mass"></div>
-                    <div class="mass"></div>
+                    <div class="mass">100</div>
+                    <div class="mass">grams</div>
                 </div>
             </div>
         </div>
-        <div class="nutrient-value">
-            <div class="macronutrients-container">
-                <div class="title">Macronutrients</div>
-                <div class="value-container">
-                    <div class="name"></div>
+        <div class="value-per">Nutritional value per 100 g</div>
+        <div class="macronutrients-container">
+            <div class="title">Macronutrients</div>
+            <div class="maccro-container">
+                <div class="nutri-container">
+                    <div class="name-maccro">Energy</div>
+                    <div class="value">151.0</div>
+                    <div class="type-nutri">kcal</div>
+                </div>
+                <div class="nutri-container">
+                    <div class="name-maccro">Fat</div>
+                    <div class="value">15.2</div>
+                    <div class="type-nutri">g</div>
+                </div>
+                <div class="nutri-container">
+                    <div class="name-maccro">Carbohydrate</div>
+                    <div class="value">0.8</div>
+                    <div class="type-nutri">g</div>
+                </div>
+                <div class="nutri-container">
+                    <div class="name-maccro">Protein</div>
+                    <div class="value">2.9</div>
+                    <div class="type-nutri">g</div>
                 </div>
             </div>
+        </div>
+
+        <div class="micronutrients-container">
+            <div class="title">Micronutrients</div>
+            <div class="miccro-container">
+                <div class="miccro-element">
+                    <div class="micro-name">Cholesterol</div>
+                    <div class="micro-value">0.0</div>
+                    <div class="micro-mass">mg</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Fiber</div>
+                    <div class="micro-value"></div>
+                    <div class="micro-mass">g</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Sodium</div>
+                    <div class="micro-value">240.0</div>
+                    <div class="micro-mass">mg</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Water</div>
+                    <div class="micro-value">76.7</div>
+                    <div class="micro-mass">g</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Vitamin A</div>
+                    <div class="micro-value"></div>
+                    <div class="micro-mass">ug</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Vitamin B-6</div>
+                    <div class="micro-value">0.06</div>
+                    <div class="micro-mass">mg</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Vitamin B-12</div>
+                    <div class="micro-value">0.0</div>
+                    <div class="micro-mass">ug</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Vitamin C</div>
+                    <div class="micro-value">30.0</div>
+                    <div class="micro-mass">mg</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Vitamin D (D2 + D3)</div>
+                    <div class="micro-value">0.0</div>
+                    <div class="micro-mass">ug</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Vitamin E</div>
+                    <div class="micro-value"></div>
+                    <div class="micro-mass">mg</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Vitamin K</div>
+                    <div class="micro-value"></div>
+                    <div class="micro-mass">ug</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Starch</div>
+                    <div class="micro-value">0.0</div>
+                    <div class="micro-mass">g</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Lactose</div>
+                    <div class="micro-value">0.0</div>
+                    <div class="micro-mass">g</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Alcohol</div>
+                    <div class="micro-value"></div>
+                    <div class="micro-mass">g</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Caffeine</div>
+                    <div class="micro-value"></div>
+                    <div class="micro-mass">mg</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Calcium</div>
+                    <div class="micro-value">35.0</div>
+                    <div class="micro-mass">mg</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Lactose</div>
+                    <div class="micro-value">0.0</div>
+                    <div class="micro-mass">g</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Lactose</div>
+                    <div class="micro-value">0.0</div>
+                    <div class="micro-mass">g</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Lactose</div>
+                    <div class="micro-value">0.0</div>
+                    <div class="micro-mass">g</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Lactose</div>
+                    <div class="micro-value">0.0</div>
+                    <div class="micro-mass">g</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Lactose</div>
+                    <div class="micro-value">0.0</div>
+                    <div class="micro-mass">g</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Lactose</div>
+                    <div class="micro-value">0.0</div>
+                    <div class="micro-mass">g</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Lactose</div>
+                    <div class="micro-value">0.0</div>
+                    <div class="micro-mass">g</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Lactose</div>
+                    <div class="micro-value">0.0</div>
+                    <div class="micro-mass">g</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Lactose</div>
+                    <div class="micro-value">0.0</div>
+                    <div class="micro-mass">g</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Lactose</div>
+                    <div class="micro-value">0.0</div>
+                    <div class="micro-mass">g</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Lactose</div>
+                    <div class="micro-value">0.0</div>
+                    <div class="micro-mass">g</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Lactose</div>
+                    <div class="micro-value">0.0</div>
+                    <div class="micro-mass">g</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Lactose</div>
+                    <div class="micro-value">0.0</div>
+                    <div class="micro-mass">g</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Lactose</div>
+                    <div class="micro-value">0.0</div>
+                    <div class="micro-mass">g</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Lactose</div>
+                    <div class="micro-value">0.0</div>
+                    <div class="micro-mass">g</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Lactose</div>
+                    <div class="micro-value">0.0</div>
+                    <div class="micro-mass">g</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Lactose</div>
+                    <div class="micro-value">0.0</div>
+                    <div class="micro-mass">g</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Lactose</div>
+                    <div class="micro-value">0.0</div>
+                    <div class="micro-mass">g</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Lactose</div>
+                    <div class="micro-value">0.0</div>
+                    <div class="micro-mass">g</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Lactose</div>
+                    <div class="micro-value">0.0</div>
+                    <div class="micro-mass">g</div>
+                </div>
+                <div class="miccro-element">
+                    <div class="micro-name">Lactose</div>
+                    <div class="micro-value">0.0</div>
+                    <div class="micro-mass">g</div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-container">
+            <div class="btn-cancel">Cancel</div>
+            <div class="btn-save">Save and close</div>
         </div>
     </div>
 </body>

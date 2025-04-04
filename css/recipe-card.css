@@ -120,10 +120,10 @@
 }
 
 .recipe-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  width: 100%;
   gap: 20px;
-  max-height: calc(100% - 150px);
+  grid-template-columns: repeat(2, 1fr)
 }
 
 .recipe-element {
@@ -131,8 +131,7 @@
   border-radius: 5px;
   border: 1px solid #eee;
   flex: 1 578px;
-  min-width: 578px;
-  max-width: calc(100% / 2 - 10px);
+  width: 100%;
   flex-shrink: 0;
   display: flex;
 }
@@ -142,8 +141,7 @@
   height: 218px;
   flex-shrink: 0;
   border-radius: 5px 0px 0px 5px;
-  background: url(../assets/images/Lemon-Turmeric-Roasted-Cauliflower8-683x1024.jpg)
-    transparent 50% / cover no-repeat;
+  background: url(../assets/images/Lemon-Turmeric-Roasted-Cauliflower8-683x1024.jpg) transparent 50% / cover no-repeat;
   height: 100%;
   position: relative;
 }
@@ -186,8 +184,7 @@
   width: 14px;
   height: 14px;
   flex-shrink: 0;
-  background: url(../assets/images/diversity_3.svg.png) transparent 50% / cover
-    no-repeat;
+  background: url(../assets/images/diversity_3.svg.png) transparent 50% / cover no-repeat;
 }
 
 .community-content {
@@ -297,8 +294,7 @@
   width: 18px;
   height: 18px;
   flex-shrink: 0;
-  background: url("../assets/images/Icon\ \(3\).png") transparent 50% / cover
-    no-repeat;
+  background: url("../assets/images/Icon\ \(3\).png") transparent 50% / cover no-repeat;
 }
 
 .typeOfFood-content {
@@ -355,10 +351,12 @@
   font-weight: 400;
   line-height: 16.5px;
 }
+
 .myRecipes-container {
   display: flex;
   justify-content: space-between;
 }
+
 .favorite-container {
   display: flex;
   width: 115.41px;
@@ -370,12 +368,14 @@
   border: 1px solid #eee;
   background: #fff;
 }
+
 .favorite-logo {
   width: 14px;
   height: 14px;
   flex-shrink: 0;
   background: url("../assets/images/heart.png") transparent 50% / cover;
 }
+
 .favorite-title {
   color: #676a6c;
   text-align: center;
@@ -385,6 +385,7 @@
   font-weight: 600;
   line-height: 17.14px;
 }
+
 .favorite-quantity {
   color: #aaa;
   text-align: center;
@@ -394,12 +395,14 @@
   font-weight: 400;
   line-height: 11px;
 }
+
 .tool-container {
   display: flex;
   gap: 12px;
   justify-content: center;
   align-items: center;
 }
+
 .btn-choises {
   display: flex;
   width: 16px;
@@ -413,6 +416,7 @@
   cursor: pointer;
   background: url("../assets/images/choise.png") transparent 50% / cover;
 }
+
 .btn-fix {
   display: flex;
   align-items: center;
@@ -427,12 +431,14 @@
   cursor: pointer;
   line-height: 14px;
 }
+
 .btn-create {
   color: #2ba0cc;
   font-family: "Open Sans";
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
-  line-height: 18px; /* 150% */
+  line-height: 18px;
+  /* 150% */
   cursor: pointer;
 }
