@@ -11,6 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
 </head>
 
 <body>
@@ -23,10 +25,45 @@
         <div class="container">
             <h2>Please sign up</h2>
             <div class="input-container">
-                <input type="email" id="email" placeholder="Email address">
-                <input type="password" id="password" placeholder="Username">
-                <input type="password" id="password" placeholder="Password">
+                <div class="site">
+                    <input required type="text" id="name" class="siteName">
+                    <label for="name" class="label">Username</label>
+                    <div class="error" id="name-error"></div>
+                </div>
+
+                <div class="site">
+                    <input required type="email" id="email" class="siteName">
+                    <label for="email" class="label">Email</label>
+                    <div class="error" id="email-error"></div>
+                </div>
+
+                <div class="site">
+                    <input required type="password" id="password" class="siteName">
+                    <label for="password" class="label">Password</label>
+                    <div class="show-hide" data-target="password"
+                        style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); cursor: pointer;">
+                        <lord-icon src="https://cdn.lordicon.com/dicvhxpz.json" trigger="hover" stroke="light"
+                            style="width: 24px; height: 24px;">
+                        </lord-icon>
+                    </div>
+                    <div class="error" id="password-error"></div>
+                </div>
+
+                <div class="site">
+                    <input required type="password" id="confirm-password" class="siteName">
+                    <label for="confirm-password" class="label">Confirm Password</label>
+
+                    <div class="show-hide" data-target="confirm-password"
+                        style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); cursor: pointer;">
+                        <lord-icon src="https://cdn.lordicon.com/dicvhxpz.json" trigger="hover" stroke="light"
+                            style="width: 24px; height: 24px;">
+                        </lord-icon>
+                    </div>
+
+                    <div class="error" id="confirm-error"></div>
+                </div>
             </div>
+
             <p>Already have an account, <a href="../pages/login.html">click here!</a></p>
             <div class="btn-login">Sign up</div>
         </div>

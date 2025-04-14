@@ -37,11 +37,12 @@
 }
 
 .account {
+    cursor: pointer;
     display: flex;
     height: 75px;
     padding-right: 20px;
     align-items: center;
-    width: 151.9px;
+    width: fit-content;
     gap: 10px;
     background-color: transparent;
 }
@@ -57,7 +58,7 @@
 
 .account .content {
     display: flex;
-    width: auto;
+    width: fit-content;
     height: 23.09px;
     align-items: center;
     color: #888;

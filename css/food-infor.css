@@ -6,9 +6,8 @@
 
 .foodInfor-container {
     padding: 25px 30px 16px 30px;
-    display: flex;
-    width: 100%;
-    /* height: 100%; */
+    overflow-y: auto;
+    width: 70%;
     flex-direction: column;
     justify-content: center;
     border-radius: 4px;
@@ -28,13 +27,12 @@
     font-style: normal;
     font-weight: 700;
     line-height: 21px;
-    /* 100% */
     position: absolute;
     right: 15px;
     top: 6px;
 }
 
-.header {
+.foodInfor-container .header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,7 +46,6 @@
     font-size: 28.6px;
     font-style: normal;
     font-weight: 400;
-    /* 142.867% */
     flex-shrink: 0;
 }
 
@@ -59,7 +56,6 @@
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
-    /* 150% */
     height: 19.5px;
     flex-shrink: 0;
 }
@@ -75,7 +71,7 @@
 
 .preliminary-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
 }
 
@@ -94,10 +90,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: 21.45px;
-    /* 150% */
 }
 
-.content {
+.preliminary-container .content {
     text-overflow: ellipsis;
     width: 70%;
     flex: 1;
@@ -155,7 +150,6 @@
     font-style: normal;
     font-weight: 600;
     line-height: 18.57px;
-    /* 142.846% */
 }
 
 .macronutrients-container {
@@ -164,7 +158,18 @@
     flex-direction: column;
 }
 
-.title {
+.macronutrients-container .title {
+    color: #676A6C;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 20.8px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 31.2px;
+    margin-bottom: 15px;
+}
+
+.micronutrients-container .title {
     color: #676A6C;
     text-align: center;
     font-family: "Open Sans";
@@ -184,8 +189,15 @@
 
 .nutri-container {
     display: flex;
+    flex-direction: column;
+}
+
+.boxa {
+    display: flex;
     flex-direction: row;
 }
+
+
 
 .name-maccro {
     padding-left: 11px;
@@ -203,7 +215,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 21.45px;
-    /* 150% */
 }
 
 .maccro-container .value {
@@ -240,7 +251,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 19.5px;
-    /* 150% */
 }
 
 .micronutrients-container {
@@ -258,7 +268,7 @@
 
 .miccro-element {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .micro-name {
@@ -361,5 +371,4 @@
     font-weight: 400;
     line-height: 20px;
     white-space: nowrap;
-    /* 142.857% */
 }

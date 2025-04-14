@@ -37,7 +37,7 @@
     flex-grow: 1;
     background-color: #2F4050;
     min-height: 0;
-    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .linkpage {
@@ -48,6 +48,7 @@
     align-items: center;
     gap: 7px;
     flex-shrink: 0;
+    position: relative;
 }
 
 .linkpage span {
@@ -83,7 +84,7 @@
     display: flex;
     width: 220px;
     height: 50px;
-    padding: 10px 73.502px 10px 20px;
+    padding: 10px 20px;
     align-items: center;
     gap: 7px;
     flex-shrink: 0;
@@ -125,4 +126,37 @@
 
 a:hover {
     background-color: #293846;
+}
+
+
+.logo.minactive {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    background: url(../assets/images/logo.jpg) lightgray no-repeat;
+    background-position: left;
+    background-size: 432%;
+    overflow: hidden;
+    position: absolute;
+    right: 10px;
+    top: 55px;
+    transition: all 0.3s ease;
+}
+
+.linkpage.minactive span {
+    visibility: hidden;
+}
+
+.linkpage.minactive {
+    padding: 10px 20px 10px 98px;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    transition: all 0.3s ease;
+}
+
+.sign-out.minactive {
+    padding: 10px 15px 10px20px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
 }
